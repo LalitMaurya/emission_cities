@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<title>Delhi: India's emission capital</title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Delhi’s annual CO2 emission of 69.4 million tonnes is equal to the CO2 emission of Bengaluru, Hyderabad and Chennai put together">
+
+<meta name="keywords" content="Energy, India, Electricity, Rural Electrification, Renewable Energy, Hydroelectricity, Narendra Modi, Government of India, Ministry of Power, IRENA, IEA, World Bank, Sustainable Development, SDG, Google, Hazardous Waste, Fracking, Oil, Fossil Fuels, Green House Gases, President, US, Air Pollution, Urbanisation, Pollution, Climate Change, Atmosphere, Ozone Layer, Mining, Environment Clearance, Forests Clearance, Environment Impact Assessment (EIA), Court, National Green Tribunal (NGT), Lakes, Rivers, Natural Disasters, Floods, Drought, Dams, Irrigation, MGNREGA, Poverty,  Rural Development, Food Safety, Bhopal Gas Disaster, GM Crops, Industry, Public Transport, Water Harvesting, Rivers, Government, Renewable Energy, Solar Energy, Wind Energy, Health, Obesity, Lifestyles and Health, Forests, Deforestation, Food Security, Livestock, Fisheries, Urbanisation, Water Supply, Sanitation, Solid Waste, Hazardous Waste, E-Waste, Pesticides, Toxins, Wildlife, Tribals,  Biodiversity, Western Ghats, Nepal, Bhutan, Bangladesh, Pakistan, Burma, Sri Lanka, Maldives, Hospital Waste, Sustainable Development">
+
+
+   <meta property="og:title" content="Count your Carbon Footprints">
+<meta property="og:description" content="Delhi’s annual CO2 emission of 69.4 million tonnes is equal to the CO2 emission of Bengaluru, Hyderabad and Chennai put together">
+<meta property="og:type" content="Infographic">
+<meta property="og:image" content="http://indiaenvironmentportal.org.in/media/energy/trump_tracker/trump.png">
+<meta name="twitter:card" value="photo">
+<meta name="twitter:image" value="http://indiaenvironmentportal.org.in/media/energy/trump_tracker/trump.png">
+<meta name="twitter:title" value="Count your Carbon Footprints">
+<meta name="twitter:description" value="Delhi’s annual CO2 emission of 69.4 million tonnes is equal to the CO2 emission of Bengaluru, Hyderabad and Chennai put together">
+
+
+
+    <meta name="author" content="Lalit Maurya & Subhojit Goswami">
+		
+		<link rel="shortcut icon" href="../favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+<link href="main.css" rel="stylesheet">
+<style>
+    body {
+	max-width:100%;
+	text-align:center;
+	overflow-x: hidden;
+       
+    }
+
+    h1,
+    a {
+        color: black;
+    }
+
+    .legend {
+        font-size: 12px;
+    }
+
+    .sea {
+        fill: Azure;
+    }
+
+    .land {
+        fill: #999999;
+        opacity: .5;
+    }
+
+    .boundary {
+        fill: none;
+        stroke: LightGrey;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+		stroke-dasharray:5, 5;
+    }
+
+    .triangle, .legend-triangle, .legend-rect {
+        cursor: pointer
+    }
+  
+    .legend-triangle, .legend-text {
+      fill: grey;
+    }
+  
+  .legend-text {
+    font-size: 12px
+  }
+  
+  .legend-rect {
+    stroke: white
+  }
+
+    .label, labelPosition {
+        text-anchor: middle;
+		position: absolute;			
+			    text-align: left;			
+				white-space: normal;					
+			    padding: 2px;
+				padding-left:12px;				
+			    font-size: 18px;		
+			    background: whitesmoke;	
+			    border: 1px solid gray;	
+			    border-radius: 4px;			
+			    pointer-events: none;
+			    cursor: none;	
+    }
+	
+	.labelCountry.text
+	{
+	font-size:60px;}
+	
+	 html, body {
+      	height:90%;
+      	width:100%;
+      	padding: 0px;
+      	margin: 0px;
+      }
+      .tl-timeline {
+      	
+      }
+      
+	  hr.style-one { border: 0; height: 1px; background:#990000; width:50%; background-image: linear-gradient(to right, #ccc, #333, #ccc); }
+	  
+	  .heading{
+	  font-size:1.6em;
+	  font-family:GuardianTitlepieceWeb-Regular;
+	  
+	  
+	  
+	  }
+	  
+	  .paragraph{
+	  max-width:1100px;
+	  font-size:19px;
+	  line-height:26px;  
+	  
+	  }
+	  
+	
+	
+</style>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+<link rel="shortcut icon" href="../favicon.ico">
+		
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="timeline.css">
+	 <link rel="stylesheet" href="http://indiaenvironmentportal.org.in/media/energy/trump_tracker/main.css">
+	 <link rel="stylesheet" href="http://indiaenvironmentportal.org.in/media/energy/trump_tracker/bootstrap.min.css">
+	 
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59b0ca8e1211dd97"></script>
+	
+	<script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+Function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+</script>
+
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-5282895-1']);
+    _gaq.push(['_trackPageview']);
+
+    
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<body>
+
+<div class="nav-menu fixed-top is-scrolling">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="background-color:rgba(255,255,255,1);">
+          
+		  
+		  <nav class="navbar navbar-light navbar-expand-lg">
+          
+		  <a class="navbar-brand" href="http://www.downtoearth.org.in/"><img src="http://indiaenvironmentportal.org.in/media/iep/infographics/clean_your_backyard/dte_logo.png" width="220px" class="img-fluid" alt="logo"></a>
+		  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+              aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a class="nav-link" href="http://www.downtoearth.org.in/dte-infographics/58530_no_place_to_grow_old.html" target="_blank"><strong>&laquo;</span></strong> Previous Infographic | <strong>No place to grow old</strong><span class="sr-only">(current)</span></a> </li>
+               
+                <li class="nav-item"> <a class="nav-link" href="https://twitter.com/LalitMaurya" target="_blank">| Lalit Maurya &amp; Subhojit Goswami&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/CreativeCommons_logo_trademark.svg/2000px-CreativeCommons_logo_trademark.svg.png" width="90" /></a> </li>
+                <li class="nav-item"><a href="http://www.downtoearth.org.in/infographics" target="_blank" class="btn btn-outline-dark my-3 my-sm-0 ml-lg-3">View all Infographics</a></li>
+              </ul>
+            </div>
+			
+			
+          </nav>
+		  
+		  
+        </div>
+      </div>
+    </div>
+</div>
+  
+   
+ 
+  <br>&nbsp;<br>
+<center>
+ <img src="india1.png" width="52%" />
+ 
+ <h1 style="font-family:GuardianTitlepieceWeb-Regular; font-size:3.9em; line-height:1.3em; margin-top:-1.5em;"><br><span style="font-size:1.3em;"> India's emission capitals</span></h1>
+ 
+ 
+ 
+ 
+ <p style="max-width:1300px; font-size:20px; line-height:27px; margin-top:10px;"><strong>Delhi’s annual CO2 emission of 69.4 million tonnes is equal to the CO2 emission of Bengaluru, <br>Hyderabad and Chennai put together</strong>
+  </p></center>
+   
+  
+   <br><br>
+
+ 
+  <center><div class="addthis_inline_share_toolbox" style="margin-top:-20px;"></div></center><br>
+ <hr class="style-one">
+
+
+	
+	<p style="max-width:1100px; font-size:19px; line-height:26px; margin-top:1em; text-align:left; margin-left:10%; margin-right:5%;">
+	 
+	 <br><iframe src="map/coverage.html" frameborder="0" width="60%" height="610" align="right"  scrolling="no" style="overflow:hidden; margin-left:0%; margin-right:-6em;"></iframe>
+	  <br>
+Not surprisingly, the national capital region of Delhi has the highest annual carbon footprint in the country. In fact, Delhi’s annual CO2 emission of 69.4 million tonnes is equal to the CO2 emission of Bengaluru, Hyderabad and Chennai put together. When it comes to per capita CO emission, Chandigarh and Vadodara are far ahead of the rest with 3.9 tonnes and 3.5 tonnes respectively.<br><br><span style="font-size:15px; font-weight:500;"><span style="color:#990000;">Move mouse over the bars to see details:</span></span>
+
+<iframe src="bar/bar.html" frameborder="0" width="640px" height="410" align="left" scrolling="no" style="overflow:hidden; margin-left:-5em; margin-right:0em;"></iframe>
+
+
+
+
+
+<br><br><span style="font-size:15px; font-weight:500;"><span style="color:#990000;">Move mouse over the bubbles to see details:</span></span><br>&nbsp;<br>
+
+
+According to a study titled 'CO2 Emissions from Fuel Combustion (Highlights) 2017', which was released in November 2017, CO2 levels in India from fuel combustion increased from 181 million tonnes (MT) in 1971 to 2,066 MT in 2015—a 1,041 per cent increase. </span></p>
+	
+	<p style="max-width:900px; font-size:19px; line-height:22px; margin-top:25px; text-align:left; margin-left:15%; margin-right:8%;">
+		<span style="font-size:1.6em; line-height:1.2em; max-width:1000px;"><span style="color:#990000;"><img src="fumes.png" align="left" hspace="14" width="140"><br><strong>Did you know?</strong> </span>	In India, heatwave deaths have almost doubled over the past 20 years.</span><br>
+		&nbsp;<br>
+			
+	
+	</p> 
+	
+ 
+<center>
+ <hr class="style-one" style="text-align:center;"></center><p>
+ 
+
+<p style="max-width:1100px; font-size:19px; line-height:26px; margin-top:2em; text-align:left; margin-left:10%; margin-right:5%;">
+
+ <span class="heading">Cities at risk</span><br><br> Bangalore, the prosperous software hub of India, is getting thirstier by the day even as it destroys its water bodies. New Delhi is blanketed every winter in thick, choking smog that you couldn't cut with a knife. Freak rains and cyclonic storms regularly bring Chennai to its knees. The annual dunking Mumbai gets every monsoon has become a part of life for millions. The signs are clear. Extreme weather events have started hurting Indian cities with frightening frequency <br>
+	  <br>
+	<iframe src="heatgrid/heat.html" frameborder="0" scrolling="no" width="100%" height="750" style="overflow:hidden;"></iframe>
+
+	<img src="temp.png" width="52%" align="left" style="padding-right:10px; margin-top:20px;margin-bottom:20px;" />Extreme weather events have started affecting Indian cities with frightening frequency. A record 360 million people will be exposed to extreme heat in 142 Indian cities by 2050 if global warming continues. Temperatures in three Indian cities—Chennai, Mumbai and Delhi—in the last five decades have seen a steady rise. In Chennai alone, temperature has increased by an astonishing 0.9°C since 1960-70.  <img src="india.png" width="52%" align="right" style="padding-left:20px; margin-top:20px;margin-bottom:20px;" />The link between carbon emission and heating up of the world has been long established. The cities, which will emit more CO2 will see a faster rise in temperature as more CO2 concentration in the atmosphere means intense absorption of solar heat. There is no other way for these cities but to cut down on their carbon footprint. 
+
+
+
+
+</span></p>
+
+<p style="max-width:1100px; font-size:19px; line-height:26px; margin-top:2em; text-align:left; margin-left:10%; margin-right:5%;">
+
+<span class="heading">Can Indian cities lead on climate action</span><br><span style="font-size:16px; line-height:18px; font-weight:300;">
+By 2030, Indian cities will produce 70 per cent of the country’s wealth and be home to 590 million inhabitants. It is time they made wise choices like energy efficient appliances and buildings.  <br></span>
+<br>
+Today’s cities need "radical decarbonisation measures" like limiting   vehicles that run on fossil fuel, shifting to mass transport, and   gradually switching to 100 per cent renewable electricity that can   significantly contribute towards reduction in carbon footprint.</p>
+
+	<p style="max-width:1100px; font-size:19px; line-height:22px; margin-top:25px; text-align:left; margin-left:15%; margin-right:8%;">
+		<span style="font-size:1.6em; line-height:1.2em; max-width:1000px;"><span style="color:#990000;"><img src="fumes.png" align="left" hspace="14" width="140"><br><strong>Did you know?</strong> </span>	650 million people, in over 500 cities globally are at risk of water shortages due to climate change, including Bengaluru, Chennai, Delhi, Jaipur & Kolkata</span><br>
+		&nbsp;<br>
+			
+	
+	</p> 
+	
+	<p style="max-width:1100px; font-size:19px; line-height:26px; margin-top:1em; text-align:left; margin-left:10%; margin-right:5%;">
+
+In a bid to move towards clean energy, this year, the Ministry of New and Renewable Energy, under its scheme “Development of Solar Cities”, has approved/sanctioned 60 cities, including 13 Pilot and 5 Model Cities up to 12th Five-year Plan period. At a time when urbanisation and economic development are leading to a rapid rise in energy demand in urban areas, measures such as these would help mitigate emissions.<br><br>
+
+<span style="heading"><strong>Graph shows the Solar Cities for which Sanctions/In-Principle approvals have been given</strong></span><br><span style="font-size:15px; font-weight:500;"><span style="color:#990000;">Move mouse over the bars to see details:</span></span>
+
+
+
+</p></p></p></p></p>
+
+
+<iframe src="bar/solar.html" frameborder="0" scrolling="no" width="100%" height="480" style="overflow:hidden;"></iframe>
+
+
+<p style="max-width:1100px; font-size:19px; line-height:26px; margin-top:1em; text-align:left; margin-left:10%; margin-right:5%;">
+
+<span style="font-size:15px; font-weight:500;"> Data Source: <span style="color:#990000;">Solar / Green Cities (India), Ministry of New and Renewable Energy</span></span><br><br>
+Take the example of electric vehicles. The government has announced an ambitious target for all new vehicles in 2030 to be electric, starting with taxis, e-rickshaws and buses and, eventually, private vehicles. The motivations are to reduce vehicular emissions, improve air quality and reduce dependence on foreign oil, all perfectly reasonable. But the scheme avoids asking how cities will negotiate the rise in vehicles with the implications on other urban objectives – such as exacerbated congestion and the need for an increased share of public transit. Policy making has, so far, shirked from deliberating these difficult questions.<br><br>
+</p>
+	
+	
+ 
+ <p><center><br>
+ <hr class="style-one" style="text-align:center;"></center><p>
+
+	
+<p style="max-width:1000px; font-size:15px; line-height:20px; margin-top:25px; text-align:left; margin-left:15%;">
+		
+		
+ <strong> Data source: </strong><br>
+ <br>
+  
+  &#x02738; &nbsp;&nbsp;<a href="http://www.climatecentral.org/">Climate Central</a><br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="https://public.wmo.int/en">World Meteorological Organization (WMO)</a><br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="https://c40-production-images.s3.amazonaws.com/other_uploads/images/1789_Future_We_Don%27t_Want_Report_1.4_hi-res_120618.original.pdf">The Future We Don’t Want: How Climate Change Could Impact the World’s
+Greatest Cities, Feb 2018</a><br>
+  
+  &#x02738; &nbsp;&nbsp;<a href="https://www.tandfonline.com/doi/full/10.1080/1943815X.2015.1130723">Climate action in Indian cities: an emerging new research area, Journal of Integrative Environmental Sciences, Volume 13, 2016 - Issue 1
+</a><br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="https://www.thehindubusinessline.com/opinion/columns/indian-cities-and-climate-challenge/article21986133.ece1">Indian cities and climate challenge, Business Line</a><br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="https://scroll.in/article/841788/can-indian-cities-lead-on-climate-action-as-they-go-about-their-development-goals">Can Indian cities lead on climate action as they go about their development goals?, Scroll </a>
+   
+   <br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="http://indiaclimatedialogue.net/2017/10/11/climate-disconnect-indias-smart-cities-mission/">Climate disconnect in India’s smart cities mission </a>
+   
+   <br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="https://www.sciencedirect.com/science/article/pii/S2212095513000564">Initiating and sustaining action: Experiences building resilience to climate change in Asian cities</a>
+   
+
+</p>
+	
+	<br>&nbsp;<br>&nbsp;<br>
+	
+	<center><div class="addthis_inline_share_toolbox" style="margin-top:-20px;"></div></center>
+	
+	</p></p></p></p>
+	
+	<img src="cities_footer.png" width="100%" />
+	
+</body></html>

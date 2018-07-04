@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<title>Shifting Cities</title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How hot will summers be by 2100?">
+
+<meta name="keywords" content="Energy, India, Electricity, Rural Electrification, Renewable Energy, Hydroelectricity, Narendra Modi, Government of India, Ministry of Power, IRENA, IEA, World Bank, Sustainable Development, SDG, Google, Hazardous Waste, Fracking, Oil, Fossil Fuels, Green House Gases, President, US, Air Pollution, Urbanisation, Pollution, Climate Change, Atmosphere, Ozone Layer, Mining, Environment Clearance, Forests Clearance, Environment Impact Assessment (EIA), Court, National Green Tribunal (NGT), Lakes, Rivers, Natural Disasters, Floods, Drought, Dams, Irrigation, MGNREGA, Poverty,  Rural Development, Food Safety, Bhopal Gas Disaster, GM Crops, Industry, Public Transport, Water Harvesting, Rivers, Government, Renewable Energy, Solar Energy, Wind Energy, Health, Obesity, Lifestyles and Health, Forests, Deforestation, Food Security, Livestock, Fisheries, Urbanisation, Water Supply, Sanitation, Solid Waste, Hazardous Waste, E-Waste, Pesticides, Toxins, Wildlife, Tribals,  Biodiversity, Western Ghats, Nepal, Bhutan, Bangladesh, Pakistan, Burma, Sri Lanka, Maldives, Hospital Waste, Sustainable Development">
+
+
+   <meta property="og:title" content="Shifting Cities">
+<meta property="og:description" content="How hot will summers be by 2100?">
+<meta property="og:type" content="Infographic">
+<meta property="og:image" content="http://indiaenvironmentportal.org.in/media/energy/trump_tracker/trump.png">
+<meta name="twitter:card" value="photo">
+<meta name="twitter:image" value="http://indiaenvironmentportal.org.in/media/energy/trump_tracker/trump.png">
+<meta name="twitter:title" value="Shifting Cities">
+<meta name="twitter:description" value="How hot will summers be by 2100?">
+
+
+
+    <meta name="author" content="Lalit Maurya & Subhojit Goswami">
+		
+		<link rel="shortcut icon" href="../favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+<link href="main.css" rel="stylesheet">
+<style>
+    body {
+	max-width:100%;
+	text-align:center;
+	overflow-x: hidden;
+       
+    }
+
+    h1,
+    a {
+        color: black;
+    }
+
+    .legend {
+        font-size: 12px;
+    }
+
+    .sea {
+        fill: Azure;
+    }
+
+    .land {
+        fill: #999999;
+        opacity: .5;
+    }
+
+    .boundary {
+        fill: none;
+        stroke: LightGrey;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+		stroke-dasharray:5, 5;
+    }
+
+    .triangle, .legend-triangle, .legend-rect {
+        cursor: pointer
+    }
+  
+    .legend-triangle, .legend-text {
+      fill: grey;
+    }
+  
+  .legend-text {
+    font-size: 12px
+  }
+  
+  .legend-rect {
+    stroke: white
+  }
+
+    .label, labelPosition {
+        text-anchor: middle;
+		position: absolute;			
+			    text-align: left;			
+				white-space: normal;					
+			    padding: 2px;
+				padding-left:12px;				
+			    font-size: 18px;		
+			    background: whitesmoke;	
+			    border: 1px solid gray;	
+			    border-radius: 4px;			
+			    pointer-events: none;
+			    cursor: none;	
+    }
+	
+	.labelCountry.text
+	{
+	font-size:60px;}
+	
+	 html, body {
+      	height:90%;
+      	width:100%;
+      	padding: 0px;
+      	margin: 0px;
+      }
+      .tl-timeline {
+      	
+      }
+      
+	  hr.style-one { border: 0; height: 1px; background:#990000; width:50%; background-image: linear-gradient(to right, #ccc, #333, #ccc); }
+	  
+	  .heading{
+	  font-size:1.6em;
+	  font-family:GuardianTitlepieceWeb-Regular;
+	  
+	  
+	  
+	  }
+	  
+	  .paragraph{
+	  max-width:1100px;
+	  font-size:19px;
+	  line-height:26px;  
+	  
+	  }
+	  
+	
+	
+</style>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+<link rel="shortcut icon" href="../favicon.ico">
+		
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="timeline.css">
+	 <link rel="stylesheet" href="http://indiaenvironmentportal.org.in/media/energy/trump_tracker/main.css">
+	 <link rel="stylesheet" href="http://indiaenvironmentportal.org.in/media/energy/trump_tracker/bootstrap.min.css">
+	 
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59b0ca8e1211dd97"></script>
+	
+	<script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+Function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+</script>
+
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-5282895-1']);
+    _gaq.push(['_trackPageview']);
+
+    
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<body>
+
+<div class="nav-menu fixed-top is-scrolling">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="background-color:rgba(255,255,255,1);">
+          
+		  
+		  <nav class="navbar navbar-light navbar-expand-lg">
+          
+		  <a class="navbar-brand" href="http://www.downtoearth.org.in/"><img src="http://indiaenvironmentportal.org.in/media/iep/infographics/clean_your_backyard/dte_logo.png" width="220px" class="img-fluid" alt="logo"></a>
+		  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+              aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a class="nav-link" href="http://www.downtoearth.org.in/dte-infographics/58530_no_place_to_grow_old.html" target="_blank"><strong>&laquo;</span></strong> Previous Infographic | <strong>No place to grow old</strong><span class="sr-only">(current)</span></a> </li>
+               
+                <li class="nav-item"> <a class="nav-link" href="https://twitter.com/LalitMaurya" target="_blank">| Lalit Maurya &amp; Subhojit Goswami&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/CreativeCommons_logo_trademark.svg/2000px-CreativeCommons_logo_trademark.svg.png" width="90" /></a> </li>
+                <li class="nav-item"><a href="http://www.downtoearth.org.in/infographics" target="_blank" class="btn btn-outline-dark my-3 my-sm-0 ml-lg-3">View all Infographics</a></li>
+              </ul>
+            </div>
+			
+			
+          </nav>
+		  
+		  
+        </div>
+      </div>
+    </div>
+</div>
+  
+   
+ 
+  <br>&nbsp;<br>
+ 
+ 
+<center>
+
+<iframe width="1310" height="790" frameborder="0" scrolling="no" src="cc.html" style="margin-top:20px; overflow:hidden;"></iframe></center>
+
+<p style="max-width:1100px; font-size:19px; line-height:26px; margin-top:-4em; text-align:left; margin-left:10%; margin-right:5%; background-color:#ffffff;">
+
+<span style="font-size:15px; font-weight:500;"> Data Source: <span style="color:#990000;">Climate Central and World Meteorological Organization (WMO)</span></span><br><br>
+Summers around the world are already warmer than they used to be, and they’re going to get dramatically hotter by century’s end if carbon pollution continues to rise. That problem will be felt most acutely in cities. The world’s rapidly growing population coupled with the urban heat island effect — which can make cities up to 14°F (7.8°C) warmer than their leafy, rural counterparts —  add up to a recipe for dangerous and potentially deadly heat. Currently, about 54 percent of the world’s population lives in cities, and by 2050 the urban population is expected to grow by 2.5 billion people. As those cities get hotter, weather patterns may shift and make extreme heat even more common. That will in turn threaten public health and the economy.<br><br>
+
+<p style="max-width:1000px; font-size:19px; line-height:22px; margin-top:10px; text-align:left; margin-left:10%; margin-right:8%;">
+		<span style="font-size:1.6em; line-height:1.2em; max-width:1000px;"><span style="color:#990000;"><img src="fumes.png" align="left" hspace="14" width="140"><strong>Did you know?</strong> </span>	In 2050, The number of people living in cities regularly exposed to heat extremes will increase by 700 percent compared to today.</span>
+</p> 
+
+<p style="max-width:1100px; font-size:19px; line-height:26px; margin-top:1em; text-align:left; margin-left:10%; margin-right:5%; background-color:#ffffff;">
+To illustrate just how hot cities’ future could be and the choices they face, Climate Central created the interactive above in partnership with the World Meteorological Organization. It shows how the average summer high in the future in each of these cities compares to other cities of today. In some cases, the shift puts them in a completely new temperature zone.
+<br></p>
+
+<h2 style="margin-top:1em; margin-left:10%;"><strong>The top 10 fastest-warming cities</strong></h1>
+
+<p style="max-width:1100px; font-size:19px; line-height:26px; margin-top:0em; text-align:left; margin-left:10%; margin-right:5%; background-color:#ffffff;">
+Biggest summertime high temperature shifts by 2100
+
+<br><br>
+
+<iframe src="bar/bar_top.html" width="100%" height="420" frameborder="0" scrolling="no" align="right" style="overflow:hidden; padding-left:1px;"></iframe>
+
+<span style="font-size:15px; font-weight:500;"> Data Source: <span style="color:#990000;">Climate Central and World Meteorological Organization (WMO)</span></span><br><br>
+Under the high-pollution scenario, currently mild Ottawa, Canada could have the tropical climate of Belize City by 2100. Mountainous Kabul, Afghanistan could feel like coastal Colombo, India. Already hot Cairo, Egypt could feel like its downright sweltering neighbor Abu Dhabi.
+
+Up to a dozen cities will heat up so much, their summers will have no analog currently on Earth. Khartoum, Sudan’s average summer temperature is projected to skyrocket to 111.4°F (44.1°C) if carbon pollution continues unchecked. 
+
+<p style="max-width:1000px; font-size:19px; line-height:22px; margin-top:20px; text-align:left; margin-left:10%; margin-right:8%;">
+		<span style="font-size:1.6em; line-height:1.2em; max-width:1000px;"><span style="color:#990000;"><img src="fumes.png" align="left" hspace="14" width="140"><strong>Did you know?</strong> </span>	The number of people living in coastal cities where sea level is projected to rise by at least 0.5 metres by the 2050s compared to the present day</span>
+</p> 
+
+<p style="max-width:1100px; font-size:19px; line-height:26px; margin-top:0em; text-align:left; margin-left:10%; margin-right:5%; background-color:#ffffff;"><br>
+That shift underscores that unless carbon pollution is curbed, the planet could be headed toward a state humans have never experienced. Dealing with less extreme heat makes adaptation easier and less expensive, and given that choice, perhaps it’s no surprise cities are leading the charge on climate change. 
+
+</p>
+
+
+
+
+
+
+ 
+ <p><center>
+ <hr class="style-one" style="text-align:center;"></center><p>
+
+	
+<p style="max-width:1000px; font-size:15px; line-height:20px; margin-top:3em; text-align:left; margin-left:15%;">
+		
+		
+ <strong> Data source: </strong><br>
+ <br>
+  
+  &#x02738; &nbsp;&nbsp;<a href="http://www.climatecentral.org/">Climate Central</a><br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="https://public.wmo.int/en">World Meteorological Organization (WMO)</a><br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="https://c40-production-images.s3.amazonaws.com/other_uploads/images/1789_Future_We_Don%27t_Want_Report_1.4_hi-res_120618.original.pdf">The Future We Don’t Want: How Climate Change Could Impact the World’s
+Greatest Cities, Feb 2018</a><br>
+  
+  &#x02738; &nbsp;&nbsp;<a href="https://www.tandfonline.com/doi/full/10.1080/1943815X.2015.1130723">Climate action in Indian cities: an emerging new research area, Journal of Integrative Environmental Sciences, Volume 13, 2016 - Issue 1
+</a><br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="https://www.thehindubusinessline.com/opinion/columns/indian-cities-and-climate-challenge/article21986133.ece1">Indian cities and climate challenge, Business Line</a><br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="https://scroll.in/article/841788/can-indian-cities-lead-on-climate-action-as-they-go-about-their-development-goals">Can Indian cities lead on climate action as they go about their development goals?, Scroll </a>
+   
+   <br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="http://indiaclimatedialogue.net/2017/10/11/climate-disconnect-indias-smart-cities-mission/">Climate disconnect in India’s smart cities mission </a>
+   
+   <br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="https://www.sciencedirect.com/science/article/pii/S2212095513000564">Initiating and sustaining action: Experiences building resilience to climate change in Asian cities</a>
+  
+</p>
+	
+	<br>&nbsp;<br>&nbsp;<br>
+	
+	<center><div class="addthis_inline_share_toolbox" style="margin-top:-20px;"></div></center>
+	
+	</p></p></p></p>
+	
+	<img src="footer_shifting.png" width="100%" />
+	
+</body></html>

@@ -1,0 +1,101 @@
+country,atheism,hdi,gdpPerCapita,lifeExpectancy,continent
+Afghanistan,3,0.374,678,60.0,Asia
+Angola,10,0.508,5845,52.0,Africa
+Argentina,30,0.811,11766,76.0,America
+Australia,67,0.938,64863,83.0,Asia
+Austria,51,0.895,48956,81.5,Europe
+Bangladesh,12,0.515,903,70.0,Asia
+Belgium,68,0.897,45383,81.0,Europe
+Belize,33,0.702,4601,76.9,America
+Bolivia,13,0.675,2700,69.0,America
+Botswana,16,0.634,7135,66.0,Africa
+Brazil,10,0.73,11310,76.2,America
+Burundi,2,0.355,303,53.0,Africa
+Cambodia,3,0.543,1015,66.0,Asia
+Cameroon,6,0.495,1271,61.5,Africa
+Canada,61,0.911,51989,82.5,America
+Central African Republic,1,0.352,800,48.5,Africa
+Chile,27,0.819,15775,79.5,America
+China,82,0.699,6747,74.2,Asia
+Colombia,13,0.719,8097,74.6,America
+Costa Rica,17,0.773,10432,79.8,America
+Côte d'Ivoire,12,0.432,1175,56.5,Africa
+Croatia,29,0.805,13561,77.5,Europe
+Cuba,64,0.78,5382,79.4,America
+Czech Republic,72,0.873,18857,78.0,Europe
+Denmark,83,0.901,59190,79.5,Europe
+Ecuador,2,0.724,5968,76.0,America
+Egypt,4,0.662,3225,73.2,Africa
+El Salvador,13,0.68,3875,74.6,America
+Ethiopia,10,0.396,541,60.5,Africa
+Finland,69,0.892,47129,81.0,Europe
+France,74,0.893,42999,82.3,Europe
+Germany,62,0.92,44999,81.0,Europe
+Ghana,4,0.558,1729,66.0,Africa
+Greece,24,0.86,21857,81.0,Europe
+Guinea,2,0.355,564,55.0,Africa
+Haiti,8,0.456,819,63.0,America
+Honduras,13,0.632,2323,74.0,America
+Hong Kong,74,0.906,37777,83.8,Asia
+Hungary,63,0.831,13404,75.0,Europe
+Iceland,60,0.906,45535,83.3,Europe
+India,9,0.554,1504,70.0,Asia
+Indonesia,1,0.629,3509,72.0,Asia
+Iran,8,0.742,4750,73.5,Asia
+Iraq,15,0.59,6594,69.0,Asia
+Ireland,53,0.916,45620,81.4,Europe
+Israel,54,0.9,37035,82.1,Asia
+Italy,30,0.881,34714,83.1,Europe
+Jamaica,29,0.73,5133,74.8,America
+Japan,71,0.912,38491,84.6,Asia
+Jordan,4,0.7,5174,74.6,Asia
+Kuwait,2,0.79,47639,78.2,Asia
+Laos,3,0.543,1476,68.0,Asia
+Libya,12,0.796,11046,74.5,Africa
+Luxembourg,64,0.875,110423,82.0,Europe
+Madagascar,7,0.483,488,66.0,Africa
+Mauritania,2,0.467,1127,59.5,Africa
+Mexico,44,0.775,10629,77.2,America
+Morocco,6,0.591,3199,73.0,Africa
+Mozambique,13,0.327,592,52.5,Africa
+Myanmar,3,0.498,1200,68.0,Asia
+Namibia,8,0.608,5666,67.2,Africa
+Netherlands,65,0.921,47633,81.5,Europe
+New Zealand,67,0.919,40481,81.7,Asia
+Nicaragua,19,0.599,1839,74.5,America
+Niger,2,0.304,443,56.0,Africa
+Nigeria,2,0.471,1692,53.0,Africa
+Norway,78,0.955,100318,81.9,Europe
+Pakistan,4,0.515,1307,67.0,Asia
+Peru,15,0.741,6674,74.7,America
+Philippines,6,0.654,2790,73.0,Asia
+Poland,24,0.821,13393,77.5,Europe
+Portugal,33,0.816,20727,80.0,Europe
+Romania,17,0.786,8910,74.0,Europe
+Russia,59,0.788,14818,70.0,Europe
+Saudi Arabia,4,0.782,24847,74.3,Asia
+Senegal,3,0.47,1072,64.0,Africa
+Sierra Leone,1,0.359,784,47.5,Africa
+Singapore,53,0.895,54775,84.0,Asia
+South Africa,20,0.629,6620,61.0,Africa
+South Korea,52,0.909,24328,81.0,Asia
+Spain,55,0.885,29150,82.5,Europe
+Sri Lanka,2,0.715,3161,74.7,Asia
+Sudan,9,0.414,2039,62.0,Africa
+Sweden,88,0.916,57909,83.0,Europe
+Switzerland,57,0.913,81323,82.8,Europe
+Taiwan,45,0.89,20930,80.6,Asia
+Thailand,2,0.69,5674,74.9,Asia
+Togo,13,0.459,639,57.0,Africa
+Tunisia,7,0.712,4345,74.5,Africa
+Turkey,13,0.722,10815,74.4,Asia
+Uganda,5,0.463,626,56.0,Africa
+United Arab Emirates,4,0.818,43875,79.2,Asia
+United Kingdom,76,0.875,39567,81.0,Europe
+United States,36,0.937,53101,79.8,America
+Uruguay,64,0.792,16609,77.3,America
+Venezuela,19,0.748,12472,75.0,America
+Vietnam,44,0.617,1901,75.0,Asia
+Yemen,1,0.458,1468,64.0,Asia
+Zambia,5,0.448,1541,55.5,Africa
+Zimbabwe,9,0.397,987,54.0,Africa

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<title>What’s Polluting Delhi’s Air?</title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The government has said that every rural household in the country will have electricity by the end of 2019. It means, between May 2018 and December 2019, the government has to electrify 64,582 households every day">
+
+<meta name="keywords" content="Energy, India, Electricity, Rural Electrification, Renewable Energy, Hydroelectricity, Narendra Modi, Government of India, Ministry of Power, IRENA, IEA, World Bank, Sustainable Development, SDG, Google, Hazardous Waste, Fracking, Oil, Fossil Fuels, Green House Gases, President, US, Air Pollution, Urbanisation, Pollution, Climate Change, Atmosphere, Ozone Layer, Mining, Environment Clearance, Forests Clearance, Environment Impact Assessment (EIA), Court, National Green Tribunal (NGT), Lakes, Rivers, Natural Disasters, Floods, Drought, Dams, Irrigation, MGNREGA, Poverty,  Rural Development, Food Safety, Bhopal Gas Disaster, GM Crops, Industry, Public Transport, Water Harvesting, Rivers, Government, Renewable Energy, Solar Energy, Wind Energy, Health, Obesity, Lifestyles and Health, Forests, Deforestation, Food Security, Livestock, Fisheries, Urbanisation, Water Supply, Sanitation, Solid Waste, Hazardous Waste, E-Waste, Pesticides, Toxins, Wildlife, Tribals,  Biodiversity, Western Ghats, Nepal, Bhutan, Bangladesh, Pakistan, Burma, Sri Lanka, Maldives, Hospital Waste, Sustainable Development">
+
+
+   <meta property="og:title" content="100% electrified, but still in the dark">
+<meta property="og:description" content="The government has said that every rural household in the country will have electricity by the end of 2019. It means, between May 2018 and December 2019, the government has to electrify 64,582 households every day">
+<meta property="og:type" content="Infographic">
+<meta property="og:image" content="http://indiaenvironmentportal.org.in/media/energy/trump_tracker/trump.png">
+<meta name="twitter:card" value="photo">
+<meta name="twitter:image" value="http://indiaenvironmentportal.org.in/media/energy/trump_tracker/trump.png">
+<meta name="twitter:title" value="100% electrified, but still in the dark">
+<meta name="twitter:description" value="The government has said that every rural household in the country will have electricity by the end of 2019. It means, between May 2018 and December 2019, the government has to electrify 64,582 households every day">
+
+
+
+    <meta name="author" content="Lalit Maurya & Subhojit Goswami">
+		
+		<link rel="shortcut icon" href="../favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+<link href="main.css" rel="stylesheet">
+<style>
+    body {
+	max-width:100%;
+	text-align:center;
+	overflow-x: hidden;
+       
+    }
+
+    h1,
+    a {
+        color: black;
+    }
+
+    .legend {
+        font-size: 12px;
+    }
+
+    .sea {
+        fill: Azure;
+    }
+
+    .land {
+        fill: #999999;
+        opacity: .5;
+    }
+
+    .boundary {
+        fill: none;
+        stroke: LightGrey;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+		stroke-dasharray:5, 5;
+    }
+
+    .triangle, .legend-triangle, .legend-rect {
+        cursor: pointer
+    }
+  
+    .legend-triangle, .legend-text {
+      fill: grey;
+    }
+  
+  .legend-text {
+    font-size: 12px
+  }
+  
+  .legend-rect {
+    stroke: white
+  }
+
+    .label, labelPosition {
+        text-anchor: middle;
+		position: absolute;			
+			    text-align: left;			
+				white-space: normal;					
+			    padding: 2px;
+				padding-left:12px;				
+			    font-size: 18px;		
+			    background: whitesmoke;	
+			    border: 1px solid gray;	
+			    border-radius: 4px;			
+			    pointer-events: none;
+			    cursor: none;	
+    }
+	
+	.labelCountry.text
+	{
+	font-size:60px;}
+	
+	 html, body {
+      	height:90%;
+      	width:100%;
+      	padding: 0px;
+      	margin: 0px;
+      }
+      .tl-timeline {
+      	
+      }
+      
+	  hr.style-one { border: 0; height: 1px; background:#990000; width:50%; background-image: linear-gradient(to right, #ccc, #333, #ccc); }
+	  
+	  .heading{
+	  font-size:1.6em;
+	  font-family:GuardianTitlepieceWeb-Regular;
+	  
+	  
+	  
+	  }
+	  
+	  .paragraph{
+	  max-width:1100px;
+	  font-size:19px;
+	  line-height:26px;  
+	  
+	  }
+	  
+	
+	
+</style>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+<link rel="shortcut icon" href="../favicon.ico">
+		
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="timeline.css">
+	 <link rel="stylesheet" href="http://indiaenvironmentportal.org.in/media/energy/trump_tracker/main.css">
+	 <link rel="stylesheet" href="http://indiaenvironmentportal.org.in/media/energy/trump_tracker/bootstrap.min.css">
+	 
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59b0ca8e1211dd97"></script>
+	
+	<script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+Function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+</script>
+
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-5282895-1']);
+    _gaq.push(['_trackPageview']);
+
+    
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+<body>
+
+<div class="nav-menu fixed-top is-scrolling">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="background-color:rgba(255,255,255,1);">
+          
+		  
+		  <nav class="navbar navbar-light navbar-expand-lg">
+          
+		  <a class="navbar-brand" href="http://www.downtoearth.org.in/"><img src="http://indiaenvironmentportal.org.in/media/iep/infographics/clean_your_backyard/dte_logo.png" width="220px" class="img-fluid" alt="logo"></a>
+		  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+              aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a class="nav-link" href="http://www.downtoearth.org.in/dte-infographics/58530_no_place_to_grow_old.html" target="_blank"><strong>&laquo;</span></strong> Previous Infographic | <strong>No place to grow old</strong><span class="sr-only">(current)</span></a> </li>
+               
+                <li class="nav-item"> <a class="nav-link" href="https://twitter.com/LalitMaurya" target="_blank">| Lalit Maurya &amp; Subhojit Goswami&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/CreativeCommons_logo_trademark.svg/2000px-CreativeCommons_logo_trademark.svg.png" width="90" /></a> </li>
+                <li class="nav-item"><a href="http://www.downtoearth.org.in/infographics" target="_blank" class="btn btn-outline-dark my-3 my-sm-0 ml-lg-3">View all Infographics</a></li>
+              </ul>
+            </div>
+			
+			
+          </nav>
+		  
+		  
+        </div>
+      </div>
+    </div>
+</div>
+  
+   
+ 
+  <br>&nbsp;<br>
+
+ <center> <img src="https://epsilon.aeon.co/images/371ef08f-3451-4dc6-a740-87ed14e2b385/header_Carbon-footprint-in-the-sky.jpg" width="40%" />
+ 
+ <h1 style="font-family:GuardianTitlepieceWeb-Regular; font-size:3.9em;">Count your <br><span style="font-size:1.5em;"> Carbon Footprints </span></h1>
+ 
+ 
+ 
+ 
+ <p class="paragraph"><strong>Delhi’s annual CO2 emission of 69.4 million tonnes is equal to the CO2 emission of Bengaluru, Hyderabad and Chennai put together</strong><br><br>
+
+
+
+If you are a resident of Hong Kong, or for that matter, <span style="background-color:#000000; color:#FFFFFF; padding:3px;">Abu Dhabi or Doha</span>, you have to admit that you have a much larger carbon footprint than most other cities. Our friends in the US are not leaving behind a small carbon footprint either. Each of them is emitting at least 20 tonnes of CO2 every year, which is equal to the per capita carbon footprint of about 14 individuals in Mumbai—India’s largest city. <br>	
+   </p></center>
+   
+  
+   
+<iframe src="bee/swarm.html" frameborder="0" width="100%" height="400" scrolling="no" style="overflow:hidden; "></iframe>
+ 
+  <center><div class="addthis_inline_share_toolbox" style="margin-top:-20px;"></div></center><br>
+ <hr class="style-one">
+
+	
+	
+	
+	  
+		
+	<p style="max-width:900px; font-size:19px; line-height:26px; margin-top:3em; text-align:left; margin-left:15%; margin-right:5%;">
+	  
+	 
+	 
+	
+
+	
+	US cities such as New Orleans and Detroit have a per capita carbon footprint of more than 25 tonnes per year. At least five cities in China have such a large carbon footprint. Globally, carbon footprints are highly concentrated in a small number of dense and high-income cities.<br>
+ <br>
+
+On the contrary, middle-income cities such as <span style="background-color:#000000; color:#FFFFFF; padding:3px;">Dhaka, Karachi, Mumbai, Kolkata and Chennai have one of the lowest per capita carbon footprints ranging from 0.7 tonnes to 2.3 tonnes per year</span>. Even cities in Ecuador, Colombia, Indonesia and Dominican Republic have a per capita emission of less than 3 tonnes per year.</p>
+
+<iframe src="scatter.html" frameborder="0" width="100%" height="760" scrolling="no" style="overflow:hidden; margin-left:10%;"></iframe>
+
+
+	<p style="max-width:900px; font-size:19px; line-height:22px; margin-top:25px; text-align:left; margin-left:15%; margin-right:8%;">
+		<span style="font-size:1.6em; line-height:1.2em; max-width:1000px;"><span style="color:#990000;"><img src="fumes.png" align="left" hspace="14" width="140"><strong>Did you know?</strong> </span>	The top 100 cities across the world drive roughly 20 per cent of global carbon footprint</span><br>
+		&nbsp;<br>
+			
+	
+	</p> 
+	
+ 
+ <p><center>
+ <hr class="style-one" style="text-align:center;"></center><p>
+	
+	<p style="max-width:900px; font-size:19px; line-height:26px; margin-top:3em; text-align:left; margin-left:15%; margin-right:5%;">
+	 
+	  <span class="heading">Delhi is the India's emission capital</span><br><iframe src="map/coverage.html" frameborder="0" width="60%" height="600" align="right"  scrolling="no" style="overflow:hidden; margin-left:1%; margin-right:-4em;"></iframe>
+	  <br>
+Not surprisingly, the national capital region of Delhi has the highest annual carbon footprint in the country. In fact, Delhi’s annual CO2 emission of 69.4 million tonnes is equal to the CO2 emission of Bengaluru, Hyderabad and Chennai put together. When it comes to per capita CO emission, Chandigarh and Vadodara are far ahead of the rest with 3.9 tonnes and 3.5 tonnes respectively.<br>
+
+<iframe src="bar/bar.html" frameborder="0" width="50%" height="410" align="left" scrolling="no" style="overflow:hidden; margin-left:-5em; margin-right:1em;"></iframe>
+
+
+
+
+
+<br>
+
+
+According to a study titled ‘CO2 Emissions from Fuel Combustion (Highlights) 2017’, which was released in November 2017, CO2 levels in India from fuel combustion increased from 181 million tonnes (MT) in 1971 to 2,066 MT in 2015—a 1,041 per cent increase. </span></p>
+	<br>&nbsp;<br>
+	<p style="max-width:900px; font-size:19px; line-height:22px; margin-top:25px; text-align:left; margin-left:15%; margin-right:8%;">
+		<span style="font-size:1.6em; line-height:1.2em; max-width:1000px;"><span style="color:#990000;"><img src="fumes.png" align="left" hspace="14" width="140"><strong>Did you know?</strong> </span>	Lagos in Nigeria has the lowest per capita carbon footprint in the world</span><br>
+		&nbsp;<br>
+			
+	
+	</p> 
+	
+ 
+ <p><center>
+ <hr class="style-one" style="text-align:center;"></center><p>
+ 
+ <p style="max-width:900px; font-size:19px; line-height:26px; margin-top:3em; text-align:left; margin-left:15%; margin-right:5%;">
+	 
+	  <span class="heading">Inviting extreme heat stress and climate change</span><br>
+	  <br>
+	
+The higher the CO2 emission, the greater is the chance of global warming. According to a recent research report, urban residents will face potentially devastating heat waves, flooding and droughts by 2050 if global warming continues on its current trajectory. <br>
+	  <br>
+	
+A record 360 million people will be exposed to extreme heat in 142 Indian cities by 2050 if global warming continues. As the climate change is already underway, we need “radical decarbonisation measures” like limiting vehicles that run on fossil fuel and gradually switching to 100 per cent renewable electricity that can significantly contribute towards reduction in carbon footprint.
+
+</span></p>
+<p style="max-width:900px; font-size:19px; line-height:22px; margin-top:25px; text-align:left; margin-left:15%; margin-right:8%;">
+		<span style="font-size:1.6em; line-height:1.2em; max-width:1000px;"><span style="color:#990000;"><img src="fumes.png" align="left" hspace="14" width="140"><strong>Did you know?</strong> </span>	Seoul has the highest carbon footprint among the top 500 CO2-emitting cities in the world</span><br>
+		&nbsp;<br>
+</p> 
+	
+	
+ 
+ <p><center>
+ <hr class="style-one" style="text-align:center;"></center><p>
+
+	
+<p style="max-width:1000px; font-size:15px; line-height:20px; margin-top:25px; text-align:left; margin-left:15%;"><strong>Note:</strong> 
+<br><br>
+PM10 : Particulate matter size less than or equal to 10 μm<br>
+SO2 : Sulphur dioxide<br>
+NO2 : Nitrogen Dioxide<br><br>
+		
+		
+ <strong> Data source: </strong><br><br>
+  
+  &#x02738; &nbsp;&nbsp;<a href="http://www.worldbank.org/">Central Pollution Control Board</a><br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="http://www.worldbank.org/">EnviStats India, 2018</a><br>
+  
+   &#x02738; &nbsp;&nbsp;<a href="http://www.worldbank.org/">World Health Organisation (WHO), 2018</a>
+  
+</p>
+	
+	<br>&nbsp;<br>&nbsp;<br>
+	
+	<center><div class="addthis_inline_share_toolbox" style="margin-top:-20px;"></div></center>
+	
+	</p></p></p></p>
+	
+	<img src="http://indiaenvironmentportal.org.in/media/iep/infographics/Seeds%20of%20a%20green%20culture/images/footer.png" width="100%" />
+	
+</body></html>
